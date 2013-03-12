@@ -268,9 +268,9 @@
         <text>search</text>
       </controlProperties>
     </control>
-    <control controlID="84" controlTypeID="com.balsamiq.mockups::Accordion" x="863" y="617" w="313" h="319" measuredW="220" measuredH="375" zOrder="47" locked="true" isInGroup="-1">
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::Accordion" x="863" y="617" w="313" h="319" measuredW="216" measuredH="375" zOrder="47" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>E6%u57F9%u4F181%0A-%20%u5B66%u671F%uFF1A2012%u6691%u50471%u671F%0A-%20%u5E74%u7EA7%uFF1A6%u5E74%u7EA7%0A-%20%u79D1%u76EE%uFF1A%u82F1%u8BED%0A-%20%u6388%u8BFE%u6559%u5E08%uFF1A%u5434%u4F2F%u82F1%0A-%20%u4E0A%u8BFE%u65F6%u95F4%uFF1A%20%u6BCF%u592916%3A10-18%3A10%0A-%20%u4E0A%u8BFE%u6B21%u6570%uFF1A22%0A-%20%u4E0A%u8BFE%u5730%u70B9%uFF1A%u83B2%u82B1%u5317%u6821%u533A%0A-%20%u5B66%u8D39%uFF1A%u6559%u6750%u8D39%uFFE5100%20%20%20%20%u5B66%u8D39%uFFE52640%0AE6%u57F9%u4F182%0AE6%u57F9%u4F181</text>
+        <text>E6%u57F9%u4F181%0A-%20%u5B66%u671F%uFF1AXXXX%u6691%u5047X%u671F%0A-%20%u5E74%u7EA7%uFF1AX%u5E74%u7EA7%0A-%20%u79D1%u76EE%uFF1A%u82F1%u8BED%0A-%20%u6388%u8BFE%u6559%u5E08%uFF1AXXX%0A-%20%u4E0A%u8BFE%u65F6%u95F4%uFF1A%20%u6BCF%u592916%3A10-18%3A10%0A-%20%u4E0A%u8BFE%u6B21%u6570%uFF1A22%0A-%20%u4E0A%u8BFE%u5730%u70B9%uFF1AXXX%u6821%u533A%0A-%20%u5B66%u8D39%uFF1A%u6559%u6750%u8D39%uFFE5100%20%20%20%20%u5B66%u8D39%uFFE5XXXX%0AE6%u57F9%u4F182%0AE6%u57F9%u4F181</text>
       </controlProperties>
     </control>
     <control controlID="85" controlTypeID="com.balsamiq.mockups::Switch" x="1105" y="617" w="-1" h="-1" measuredW="68" measuredH="28" zOrder="48" locked="true" isInGroup="-1">
