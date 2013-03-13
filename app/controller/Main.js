@@ -46,8 +46,9 @@ Ext.define('pomapp.controller.Main', {
         
         // Setup start history point
         this.setHistory(this.getApplication().getHistory());
+
     },
-    
+
     addToHistory: function(id) {
         
         // Add new point to history

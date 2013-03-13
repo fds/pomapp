@@ -40,7 +40,7 @@ Ext.define("pomapp.view.Main", {
                 id: 'carousel',
                 title: '图库',
                 iconCls: 'team',
-                badgeText:4,
+                badgeText:'new',
                 items: [
                     {
                         xtype: 'pic',
