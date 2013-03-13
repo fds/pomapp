@@ -1,5 +1,6 @@
 Ext.define("pomapp.controller.Login", {
 	extend : 'Ext.app.Controller',
+	requires: ['Ext.data.JsonP'],
 	config : {
 		control : {
 			'button[id = btnLogin]' : {
@@ -31,32 +32,33 @@ Ext.define("pomapp.controller.Login", {
 			return;
 		}
 		var control = this;
-		// Ext.data.JsonP.request({
-		// 	url : Global.webSite + "servlet/Login",
-		// 	callbackKey : 'callback',
-		// 	params : {
-		// 		account : account,
-		// 		password : password
-		// 	},
-		// 	callback : function(result) {
-		// 		Ext.Viewport.unmask();
-		// 	},
-		// 	success : function(result) {
-		// 		if (result.iErrorCode == "-1") {
-		// 			Ext.Msg.alert("错误信息提示", result.sError_detail);
-		// 			return;
-		// 		} else if (result.iErrorCode == "0") {
+		Ext.data.JsonP.request({
+			url : "http://192.168.218.62/pomappservice/jsonp.ashx",
+			callbackKey : 'callback',
+			params : {
+				account : account,
+				password : password
+			},
+			timeout: 10000,//超时时间
+			callback : function(result) {
+				Ext.Viewport.unmask();
+			},
+			success : function(result) {
+				if (result.iErrorCode == "-1") {
+					Ext.Msg.alert("错误信息提示", result.sError_detail);
+					return;
+				} else if (result.iErrorCode == "0") {
 					Ext.Viewport.removeAll(true, true);
 			        Ext.Viewport.add(Ext.create('pomapp.view.Main'));
 					// Ext.get("operator_id").value = result.oObject.operator_id;
 					// Ext.get("operator_name").value = result.oObject.name;
 					control.redirectTo("Main");
-		// 		}
-		// 	},
-		// 	failure : function(result) {
-		// 		Ext.Msg.alert("超时提醒", "登录超时，请检查网络！");
-		// 	}
-		// });
+				}
+			},
+			failure : function(result) {
+				Ext.Msg.alert("超时提醒", "登录超时，请检查网络！");
+			}
+		});
 	},
 	createOverlay : function(control, text) {
 		var showOverlay = Ext.Viewport.add({
